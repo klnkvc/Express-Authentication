@@ -1,0 +1,12 @@
+CREATE database authtest1;
+use authtest1;
+CREATE TABLE `siswa` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nama` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+CREATE TABLE `user`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `username` VARCHAR(45) NOT NULL,
+    `password` CHAR(60) NOT NULL,
+    PRIMARY KEY (`id`)
+);
